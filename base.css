@@ -1,0 +1,29 @@
+/* Base CSS for whole site */
+
+body {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+h1 {
+    color: lightcoral;
+    font-size: 50px;
+    font-size: 60px;
+}
+
+a {
+    color: coral;
+    text-decoration: none;
+}
+
+.navbar {
+    list-style-type: none;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
