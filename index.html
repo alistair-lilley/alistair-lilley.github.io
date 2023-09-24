@@ -9,29 +9,28 @@
 <head>
     <link rel="stylesheet" href="base.css">
     <title>Rhys Raleigh Robbins</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
     <nav>
         <ul class="navbar">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="whoami.html">ABOUT THE AUTHOR</a></li>
-            <li><a href="dnd/dungeonsanddragons.html">D&D CREATIONS</a></li>
+            <li class="navitem"><a href="/index.html">HOME</a></li>
+            <li class="navitem"><a href="/whoami.html">ABOUT THE AUTHOR</a></li>
+            <li class="navitem"><a href="/dnd/dungeonsanddragons.html">D&D CREATIONS</a></li>
         </ul>
     </nav>
+    <div id="navigation">
+        
+    </div>
+
+    <script>$(function(){
+        $("#navigation").load("navbar.html");
+    });</script>
+
     <section>
         <h1>Welcome to the Wonderful Worlds<br>of Rhys Raleigh Robbins</h1>
 
-        <p>Hello to all you far travelers who have happened upon this page!</p>
-        
-        <p>My name is Rhys Raleigh Robbins.</p> 
-        
-        <p>I am a hobbyist writer, but most of my writings take the shape of Dungeons & Dragons homebrew content. I like to write adventures and magic items, but I do also dabble in writing non-D&D works, including prose and poetry.</p>
-        
-        <p>I engaged in collaborative projects with the amazing Twitch streamer <a href=https://www.twitch.tv/gamingwithevery1>GamingWithEvery1</a>, a fellow D&D player and a great friend of mine. Go check out his content as well!</p>
-        
-        <p>This website is currently under construction, so not much will be found here yet.</p>
-        
-        <p>Regardless, enjoy your stay!</p>
+        <p id="homeintro">Hello to all you far travelers who have happened upon this page!<br><br> My name is Rhys Raleigh Robbins.<br><br> I am a hobbyist writer, but most of my writings take the shape of Dungeons & Dragons homebrew content. I like to write adventures and magic items, but I do also dabble in writing non-D&D works, including prose and poetry.<br><br> I engaged in collaborative projects with the amazing Twitch streamer <a href=https://www.twitch.tv/gamingwithevery1>GamingWithEvery1</a>, a fellow D&D player and a great friend of mine. Go check out his content as well!<br><br> This website is currently under construction, so not much will be found here yet.<br><br> Regardless, enjoy your stay!</p>
     </section>
 </body>
 

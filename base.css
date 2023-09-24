@@ -4,16 +4,16 @@ body {
     background-color: black;
     color: white;
     font-size: 20px;
-    font-family: Georgia;
+    font-family: serif;
     text-align: center;
-    margin-right: 20%;
-    margin-left: 20%;
 }
 
 h1 {
     color: lightcoral;
     font-size: 50px;
     font-size: 60px;
+    margin-right: 20%;
+    margin-left: 20%;
 }
 
 a {
@@ -26,4 +26,15 @@ a {
     font-size: 30px;
     margin: 0;
     padding: 0;
-  }
+    justify-content: space-between;
+}
+
+.navitem {
+    display: inline;
+    font-family: sans-serif;
+}
+
+#homeintro {
+    margin-right: 20%;
+    margin-left: 20%;
+}
