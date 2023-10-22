@@ -1,0 +1,89 @@
+/* Preloading assets */
+
+/* General */
+body {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: salmon;
+    text-decoration: none;
+}
+
+#pagetitle {
+    font-family: fantasy;
+    color: salmon;
+    font-size: 450%;
+    font-style: italic;
+    text-align: center;
+}
+
+#pagedescript {
+    font-size: 150%;
+    display: block;
+    align-self: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+/* TTRPG */
+.ttrpgpdfimagelinks {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ttrpgpdfimagelink {
+    width: 700px;
+    height: 200px;
+}
+
+/* Nav bar */
+#topbar {
+    margin-top: -20px;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 0;
+    font-family: sans-serif;
+    background: rgb(0,0,0);
+    background: linear-gradient(
+                    180deg, 
+                    rgba(0,0,0,1) 0%, 
+                    rgba(107,107,107,1) 93%, 
+                    rgba(124,124,124,1) 97%, 
+                    rgba(156,156,156,1) 100%
+                 );
+}
+
+#navlist {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+li.navitem a.navlink {
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 150%;
+    text-align: center;
+}
+
+li.currentpage a.navlink {
+    background-color: darkgray;
+}
+
+ul#navlist li {
+    display: inline;
+}
+
+li.navitem a.navlink:hover {
+    background-color: firebrick;
+    transition: background-color 1s;
+}
