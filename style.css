@@ -1,3 +1,5 @@
+/* Top Bar -- All Pages */
+
 * {
     box-sizing: border-box;
 }
@@ -115,6 +117,21 @@ a:hover {
     color: violet;
 }
 
+/* Footer -- All Pages */
+
+.footer {
+    background: black;
+    border: 1px solid #ddd;
+    margin-top: 50px;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Home Page */
+
 .pages {
     display: grid;
     align-items: center;
@@ -127,30 +144,16 @@ a:hover {
     box-shadow: inset 0 1px #000;
 }
 
-.footer {
-    background: black;
-    border: 1px solid #ddd;
-}
-
 .side-boxes {
     display: grid;
     background: black;
     border: 1px solid #ddd;
 }
 
+/* Site Info (about.html) */
 
-
-
-
-
-
-
-
-.footer {
-    margin-top: 50px;
-}
-
-.footer p {
-    text-align: center;
-    font-size: 10px;
+.about {
+    background: black;
+    border: 1px solid #ddd;
+    padding: 10px;
 }
