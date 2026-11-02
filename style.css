@@ -184,9 +184,11 @@ a:hover {
     background: black;
     border: 1px solid #ddd;
     padding: 10px;
+    margin-bottom: 30px;
 }
 
 /* Mobile layout */
+
 @media (max-width: 600px) {
     .wrap-site {
         width: calc(100% - 16px);
@@ -273,6 +275,7 @@ a:hover {
 }
 
 /* Extra-small phones */
+
 @media (max-width: 360px) {
     .wrap-site {
         width: calc(100% - 12px);
