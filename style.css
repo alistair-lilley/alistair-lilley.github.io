@@ -187,6 +187,26 @@ a:hover {
     margin-bottom: 30px;
 }
 
+/* Search (search.html) */
+
+.search-body {
+    background: black;
+    border: 1px solid #ddd;
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Members (members.html) */
+
+.members-body {
+    background: black;
+    border: 1px solid #ddd;
+    padding: 50px;
+    align-items: center;
+    text-align: center;
+}
+
 /* Mobile layout */
 
 @media (max-width: 600px) {
