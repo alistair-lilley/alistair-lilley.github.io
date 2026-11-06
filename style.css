@@ -46,7 +46,7 @@ input {
     border: 1px black solid;
     padding: 2px 3px;
     margin: 5px 0px;
-    background: linear-gradient(#ccc, #666);
+    background: linear-gradient(#666, #CCC);
     color: #555;
 }
 
