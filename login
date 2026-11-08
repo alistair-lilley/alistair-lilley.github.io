@@ -7,8 +7,8 @@
     <meta property="og:image" content="https://whatdidyousee.net/preview_logo.png" />
     <meta property="og:url" content="https://whatdidyousee.net/" />
     <meta property="og:type" content="website" />
-    <title>WDYS? - Members</title>
-    <link rel="icon" href="./assets/logo.ico">   
+    <title>WDYS?</title>
+    <link rel="icon" href="/assets/logo.ico">   
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
                 </div>
                 <div class="logo-title">
                     <div class="logo">
-                        <img src="./assets/logo.png" alt="WDYS?" class="logo-image" />
+                        <img src="/assets/logo.png" alt="WDYS?" class="logo-image" />
                     </div>
                     <div class="title">
                         <h1>What Did You See?</h1>
@@ -31,32 +31,27 @@
             </div>
             <div class="navbar-wrapper">
                 <span class="navbar">
-                    <a href="index.html"><span>Home</span></a>
-                    <a href="./search.html"><span>Search</span></a>
-                    <a href="./members.html"><span>Members</span></a>
-                    <a href="./about.html"><span>About WDYS?</span></a>
+                    <a href="/"><span>Home</span></a>
+                    <a href="/search"><span>Search</span></a>
+                    <a href="/members"><span>Members</span></a>
+                    <a href="/about"><span>About WDYS?</span></a>
                 </span>
                 <span class="navbar-sign-in">
-                    <span><a href="./login.html"><strong>Login</strong></a></span>
+                    <span><a href="/login"><strong>Login</strong></a></span>
                 </span>
             </div>
         </div>
 
-        <div class="welcome">
-            <p><strong>Welcome, Guest!</strong></p>
-            <p>Please observe without interfering.</p>
-        </div>
-
         <div class="breadcrumb">
-            <a href="./index.html">Forum Home</a> ≫ Member List
+            <a href="./index.html">Forum Home</a> ≫ Board Index
         </div>
 
-        <div class="members-body">
-            <p>No one is here.</p>
+        <div class="login-page-box">
+            <p>You are not a member.</p>
         </div>
 
         <div class="footer">
-            <p><a href="./about.html">Site Info</a> · <a href="./index.html">Home</a></p>
+            <p><a href="/about">Site Info</a> · <a href="/">Home</a></p>
             <p><strong>WDYS?</strong> <em>(What Did You See?)</em> © 2026 is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p>
         </div>
     </div>

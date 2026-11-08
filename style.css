@@ -33,6 +33,11 @@ a:hover {
     margin: 12px auto 22px;
 }
 
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
 h3 {
     margin: 0;
     padding: 5px 0 0 0;
@@ -60,7 +65,7 @@ button {
     text-align: center;
     color: orchid;
     background-color: black;
-    text-size: 10px;
+    font-size: 10px;
 }
 
 .disclaimer p {
@@ -398,7 +403,7 @@ button {
 
 
 
-/* Thread page (ActX/list.html) */
+/* Thread list page (ActX/list.html) */
 
 /* .thread-wrapper {
     padding: 10px;
@@ -410,15 +415,38 @@ button {
     border: 1px white solid;
 }
 
-.forum-table .icon-username p {
+.thread-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #222;
+    border: 1px solid white;
+}
+
+.thread-table .icon-username p {
     text-align: center;
 }
 
-.forum-table .thread td {
+.thread-table .thread td {
     font-size: 12px;
     padding: 20px 0px;
     font-weight: bold;
     border-bottom: 1px solid white;
+}
+
+.thread-table thead th {
+    padding: 5px 0;
+    border-bottom: 1px solid ;
+}
+
+.thread-table td {
+    border-bottom: 1px solid;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.thread-table tbody tr:nth-child(even) {
+    background: #111;
 }
 
 .thread-number {
@@ -458,6 +486,108 @@ button {
 }
 
 
+
+
+
+/* Thread/posts page (/ActX/thread_N_NAME.html) */
+
+.posts-wrapper {
+    background: #000;
+    border: solid white 1px;
+    padding: 10px;
+}
+
+.post-title {
+    background: linear-gradient(#666, #000);
+    border: 1px solid white;
+    padding-left: 10px;
+}
+
+.posts-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #222;
+    border: 1px solid white;
+}
+
+.posts-table thead {
+    background: #111;
+}
+
+.posts-table thead th {
+    padding: 5px 0;
+}
+
+.user-information-header {
+    border-right: 1px dotted white;
+}
+
+.posts-table tbody tr:nth-child(even) {
+    background: #111;
+}
+
+.post {
+    border: 1px solid white;
+}
+
+.post-user-info {
+    border-right: 1px white dotted;
+}
+
+.post-user-info p {
+    text-align: center;
+}
+
+.posts-table td {
+    border-bottom: 1px solid white;
+}
+
+.user-icon {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: linear-gradient(#666, black);
+    font-size: 17px;
+    font-weight: bold;
+    font: serif;
+}
+
+.post-contents {
+    padding: 20px;
+}
+
+.post-contents p {
+    margin-bottom: 20px;
+}
+
+.signature {
+    border-top: 1px white dotted;
+    padding: 10px;
+}
+
+.post-navigation {
+    font-weight: bold;
+    padding: 40px 20px 20px 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+tr.posts td.post-locked {
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.post-locked p {
+    margin: 0;
+}
 
 
 
