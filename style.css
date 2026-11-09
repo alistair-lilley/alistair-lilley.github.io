@@ -286,7 +286,6 @@ button {
     background: linear-gradient(#666, black);
     font-size: 17px;
     font-weight: bold;
-    font: serif;
 }
 
 .forum-desc {
@@ -406,11 +405,18 @@ button {
     gap: 20px;
 }
 
-.team-card {
+.team-cards-title {
+    grid-column: span 3;
     background: black;
     padding: 20px;
     border: 1px solid white;
-    align-items: center;
+}
+
+.team-card {
+    grid-column: span 1;
+    background: black;
+    padding: 20px;
+    border: 1px solid white;
 }
 
 .team-pfp {
@@ -422,10 +428,11 @@ button {
     max-height: auto;
 }
 
+.team-cards-title h2,
+.team-cards-title p,
 .team-card h2 {
     text-align: center;
 }
-
 
 
 
