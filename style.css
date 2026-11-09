@@ -357,6 +357,12 @@ button {
     margin-bottom: 30px;
 }
 
+.credits-list {
+    column-count: 2;
+    column-gap: 15px;
+    list-style-position: insdie;
+}
+
 
 /* Search (search.html) */
 
@@ -674,6 +680,13 @@ td.post-locked {
 
 /* Mobile */
 
+@media screen and (max-width: 900px) {
+    
+    .credits-list {
+        column-count: 1;
+    }
+}
+
 @media screen and (max-width: 700px) {
 
     /* Site basics */
@@ -921,6 +934,12 @@ td.post-locked {
 
     .navbar span {
         font-size: 11px;
+    }
+
+    /* About */
+
+    .credits-list {
+        column-count: 1;
     }
 
     /* Creator team info */
