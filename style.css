@@ -35,7 +35,7 @@ a:hover {
 
 h1 {
     margin: 0;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 h3 {
@@ -81,7 +81,7 @@ button {
     justify-content: space-between;
     padding: 5px 10px;
     color: orchid;
-    background: #000;
+    background: black;
     font-size: 12px;
     letter-spacing: .2px;
     gap: 10px;
@@ -89,7 +89,7 @@ button {
 
 .logo-title {
     display: flex;
-    background: linear-gradient(#666, #333, #000);
+    background: linear-gradient(#666, #333, black);
     padding: 10px;
     gap: 0;
 }
@@ -108,7 +108,7 @@ button {
 }
 
 .title {
-    margin-left: 10px;
+    margin-left: 15px;
     min-width: 0;
 }
 
@@ -116,7 +116,7 @@ button {
     margin: 0;
     font: bold 34px serif;
     letter-spacing: -1px;
-    text-shadow: 1px 2px #000;
+    text-shadow: 1px 2px black;
     color: orchid;
     overflow-wrap: anywhere;
 }
@@ -170,7 +170,7 @@ button {
     border: 1px solid ghostwhite;
     margin: 10px 0px;
     padding: 0px 20px;
-    background: #000;
+    background: black;
     display: flex;
     gap: 10px;
     justify-content: space-between;
@@ -249,7 +249,7 @@ button {
 
 .forum-table thead th {
     padding: 5px 0;
-    /* background: #000; */
+    /* background: black; */
     border-bottom: 1px solid ;
 }
 
@@ -397,6 +397,41 @@ button {
 
 
 
+/* Creator team info */
+
+.team-cards-wrapper {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.team-card {
+    background: black;
+    padding: 20px;
+    border: 1px solid white;
+    align-items: center;
+}
+
+.team-pfp {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid white;
+    max-width: 200px;
+    max-height: auto;
+}
+
+.team-card h2 {
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 
 
@@ -492,15 +527,18 @@ button {
 /* Thread/posts page (/ActX/thread_N_NAME.html) */
 
 .posts-wrapper {
-    background: #000;
+    background: black;
     border: solid white 1px;
     padding: 10px;
 }
 
 .post-title {
-    background: linear-gradient(#666, #000);
+    background: linear-gradient(#666, black);
     border: 1px solid white;
-    padding-left: 10px;
+    padding: 0 20px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .posts-table {
@@ -519,8 +557,12 @@ button {
     padding: 5px 0;
 }
 
-.user-information-header {
+.user-information-header-l {
     border-right: 1px dotted white;
+}
+
+.user-information-header-r {
+    border-left: 1px dotted white;
 }
 
 .posts-table tbody tr:nth-child(even) {
@@ -531,12 +573,20 @@ button {
     border: 1px solid white;
 }
 
-.post-user-info {
+.post-user-info-op {
     border-right: 1px white dotted;
 }
 
-.post-user-info p {
+.post-user-info {
+    border-left: 1px white dotted;
+}
+
+.post-user-info-op,
+.post-user-info {
     text-align: center;
+    padding: 20px;
+    overflow-wrap: break-word;
+    word-break: normal;
 }
 
 .posts-table td {
@@ -557,17 +607,28 @@ button {
     font: serif;
 }
 
+.post-contents-commenter, 
 .post-contents {
     padding: 20px;
 }
 
+.post-contents-commenter p,
 .post-contents p {
     margin-bottom: 20px;
 }
 
+.post-contents-commenter p {
+    text-align: right;
+}
+
+.signature-commenter,
 .signature {
-    border-top: 1px white dotted;
+    border-top: 1px white dashed;
     padding: 10px;
+}
+
+.signature-commenter p {
+    text-align: right;
 }
 
 .post-navigation {
@@ -576,17 +637,26 @@ button {
     font-size: 18px;
     display: flex;
     justify-content: space-between;
-
+    gap: 15px;
 }
 
-tr.posts td.post-locked {
-    padding: 10px;
+td.post-locked {
+    padding: 50px;
     text-align: center;
     font-style: italic;
 }
 
 .post-locked p {
     margin: 0;
+}
+
+.login-to-post {
+    background: #222;
+    border: 1px solid white;
+    padding: 15px;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
@@ -681,6 +751,15 @@ tr.posts td.post-locked {
         font-size: 11px;
     }
 
+    /* Creator team info */
+
+    .team-cards-wrapper {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
     /* Home page */
 
     .main-navigation {
@@ -765,7 +844,7 @@ tr.posts td.post-locked {
         padding: 20px 12px;
     }
 
-    /* Thread page */
+    /* Threads page */
 
     .thread-number {
         font-size: 10px;
@@ -791,6 +870,18 @@ tr.posts td.post-locked {
     .forum-table .thread td {
         padding: 12px 4px;
         font-size: 11px;
+    }
+
+    /* Posts page */
+
+    .post-title {
+        display: grid;
+        padding: 0 0 20px 0;
+        grid-template-columns: 1fr;        
+    }
+
+    .post-title p {
+        padding-left: 10px;
     }
 
     /* Footer */
@@ -823,6 +914,15 @@ tr.posts td.post-locked {
 
     .navbar span {
         font-size: 11px;
+    }
+
+    /* Creator team info */
+
+    .team-cards-wrapper {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 
     .forum-desc p {
