@@ -685,6 +685,23 @@ td.post-locked {
     .credits-list {
         column-count: 1;
     }
+
+    /* Creator team info */
+
+    .team-cards-wrapper {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .team-cards-title {
+        grid-column: span 2;
+        background: black;
+        padding: 15px;
+        border: 1px solid white;
+    }
+
 }
 
 
@@ -770,22 +787,6 @@ td.post-locked {
     .breadcrumb {
         padding-left: 8px;
         font-size: 11px;
-    }
-
-    /* Creator team info */
-
-    .team-cards-wrapper {
-        padding: 15px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .team-cards-title {
-        grid-column: span 2;
-        background: black;
-        padding: 15px;
-        border: 1px solid white;
     }
 
     /* Home page */
@@ -922,7 +923,7 @@ td.post-locked {
 
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
 
     .wrap-site {
         width: calc(100% - 10px);
