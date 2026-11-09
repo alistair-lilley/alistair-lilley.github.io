@@ -687,6 +687,7 @@ td.post-locked {
     }
 }
 
+
 @media screen and (max-width: 700px) {
 
     /* Site basics */
@@ -778,6 +779,13 @@ td.post-locked {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+    }
+
+    .team-cards-title {
+        grid-column: span 2;
+        background: black;
+        padding: 15px;
+        border: 1px solid white;
     }
 
     /* Home page */
@@ -947,8 +955,15 @@ td.post-locked {
     .team-cards-wrapper {
         padding: 10px;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
         gap: 10px;
+    }
+
+    .team-cards-title {
+        grid-column: span 1;
+        background: black;
+        padding: 15px;
+        border: 1px solid white;
     }
 
     .forum-desc p {
